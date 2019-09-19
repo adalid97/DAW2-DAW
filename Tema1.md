@@ -96,7 +96,7 @@ _vnc: protocolo abierto (opensource). rdp (Microsoft), linux lo soporta  como es
   https://pepe:1234@musica.com:1443/rock/descargar.php?album=37&formato=mp3
   ```
 _formato que tiene cada recurso en internet: protocolo(http)://servidor:puerto(opcional, solo obligatorio cuando sea distinto del habitual)/ruta/recurso(muchos tipos: imágenes... (buscar)), el resto son parámetros que le pasamos: habitual en php. https(seguro, el correo va cifrado), cada vez se usa más. http puerto normalmente 80, https 443_
-
+_ pepe:1234 credenciales, usuario contraseña. Los parámetros al final._
 
 ## El protocolo HTTP
 
@@ -263,6 +263,8 @@ _svg cada vez se usa más, es una imagen, con formato xml???_
 
 ![Petición HTTP](assets/peticion-http.png)
 
+_primero se hace una consulta de dns: por eso a veces da errores, el dns devuelve la ip, y con ese ip se hace la petición al servidor(resolver el nombre:conseguir la ip). Tanto moodle como aula están en un servidor virtual_
+_valanceador de carga, proxi inverso?_
 
 
 ## Arquitecturas web
@@ -274,16 +276,20 @@ _svg cada vez se usa más, es una imagen, con formato xml???_
 - **Capa de negocio**: recibe las peticiones del usuario y desde donde se le envían las respuestas; en esta capa se verifican que las reglas establecidas se cumplen.
 - **Capa de acceso a datos**: es la formada por determinados gestores de datos que se encargan de almacenar, estructurar y recuperar los datos solicitados por la capa de negocio.
 
+_acceso a datos, no aparece en todas, pero es lo normal_
 
 ### Modelo de 2 capas
 
 ![Web 2 capas](assets/web-2-capas.png)
+
+_páginas estáticas_
 
 
 ### Modelo de 3 capas
 
 ![Web 3 capas](assets/web-3-capas.png)
 
+_páginas dinámicas(PHP). Backend y frontend_
 
 ### Páginas estáticas
 
@@ -292,6 +298,8 @@ _svg cada vez se usa más, es una imagen, con formato xml???_
 - **Javascript**
 - **Assets** (imágenes, fuentes de letra, ...)
 
+_Javascript: para mucha gente dinámico, pero para esta asignatura no: javascript muestra u oculta partes de la página, el recurso sigue ahí_
+
 
 ### Páginas dinámicas
 
@@ -299,6 +307,8 @@ _svg cada vez se usa más, es una imagen, con formato xml???_
 - **JSP**: JavaServer Pages. 
 - **ASP**: Active Server Pages. 
 
+_páginas (vistas) que se generan en el servidor al vuelo_
+_Jso. Asp de microsoft. Ahora se usan poco, solo para mantenimiento de las que se hicieron en esos lenguajes en su momento_
 
 ## Plataformas
 
