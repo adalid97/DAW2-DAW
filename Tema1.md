@@ -28,6 +28,7 @@ element: class="fragment" data-fragment-index="1"
 - ### Despliegue en Internet
 
 <!--- Note: Nota a pie de página. -->
+_Protocolo HTTP es muy importante, se usa para: _
 
 
 
@@ -46,6 +47,9 @@ element: class="fragment" data-fragment-index="1"
 
 ![Internet](assets/internet.png)
 
+_Una red en forma de malla de area extensa, donde cada nodo es un enrutador del tráfico(equipos intermedios), lo equipos finales (clientes)_
+
+
 
 ### ¿Qué es Internet?
 
@@ -53,6 +57,9 @@ element: class="fragment" data-fragment-index="1"
 - Un conjunto de **protocolos** para comunicar dichos nodos.
 - Cada protocolo permite ofrecer un **servicio** o parte de él.
 - Diseño inicial **cliente/servidor**. 
+
+_Tb veremos protocolo ftp(transferencia de archivos), ssh(permite conexion remota), http(transferencia de páginas webs)_
+_Servicios P2P (torrent), distinto del normal: cliente/servidor_
 
 
 ### Protocolos de Internet
@@ -65,6 +72,15 @@ element: class="fragment" data-fragment-index="1"
 - **Telnet**, **SSH** (Conexión remota por terminal)
 - **VNC**, **RDP** (Conexión remota gráfica)
 - ... muchos más
+
+_*Puede caer tipo test. Buscar las siglas*_
+_Hipertext Protocolo. CERN para???????????????_
+_Antes de cargar la página el navegador solicita un dns_
+_smtp para enviar, pop e imap para recibir_
+_rip:va actualizando la tabla de rutas. Rutas estáticas en los equipos, distinto de los enrutadores.ospf: más moderno, camino más corto: mira la ruta más accesible, más rápida. Telefonica tiene el enrutamiento de todos sus nodos en una u otra de ellas. Para conectar entre ellas se usan estos mismos protocolos. PAra unirlas hace falta un enrutador frontera que utiliza el bgp para conectar con otras redes 
+_bgp: enruta solo en ciertos nodos: pasarela frontera: entre distintos sistemas autonomos(redes)_
+_Telnet, ssh_
+_vnc: protocolo abierto (opensource). rdp (Microsoft), linux lo soporta  como escritorio remoto de un servidor windows, como servidor funciona peor_
 
 
 ###  Localizador Uniforme de Recursos (URL)
@@ -79,7 +95,7 @@ element: class="fragment" data-fragment-index="1"
   ftp://archivos.example.com/descargas/ubuntu.iso
   https://pepe:1234@musica.com:1443/rock/descargar.php?album=37&formato=mp3
   ```
-
+_formato que tiene cada recurso en internet: protocolo(http)://servidor:puerto(opcional, solo obligatorio cuando sea disinto del habitual)/ruta/recurso(muchos tipos (buscar))
 
 
 ## El protocolo HTTP
