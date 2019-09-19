@@ -257,6 +257,7 @@ audio/ogg             | Audio en formato OGG Vorbis
 video/H264            | Video con codificación H.264
 ...                   | ...
 
+_svg cada vez se usa más, es una imagen, con formato xml???_
 
 ### Petición HTTP
 
