@@ -162,6 +162,7 @@ _cabecera y cuerpo(código html, con su head y body...) _
 - **PUT**
 - **DELETE**
 
+_post para insertar o guardar. put para modificarlo.get y post soportados por el navegador, put y delete no_
 
 ### Métodos HTTP
 #### Otros métodos
@@ -183,6 +184,8 @@ https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto
 - **4xx**: Errores del cliente.
 - **5xx**: Errores del servidor.
 
+_404 si no escribe la página en el servidor, si por ejemplo se ha escrito bien..._
+
 [Lista de códigos de estado (en inglés)](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
 
 
@@ -193,7 +196,7 @@ https://es.wikipedia.org/wiki/Protocolo_de_transferencia_de_hipertexto
 Accept	        | Accept: text/html	            | Tipos de contenido que se admiten como respuesta.
 Accept-Charset	| Accept-Charset: utf-8	        | Juegos de caracteres admitidos.
 Accept-Encoding	| Accept-Encoding: gzip, deflate| Lista de codificaciones (compresión) admitidas.
-
+ _cliente_
 
 ### Cabeceras de la petición
 
@@ -204,6 +207,8 @@ Host            | Host: en.wikipedia.org:8080   | Nombre de dominio del servidor
 User-Agent      |User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:12.0) | Agente del usuario.
 ...             | ...                           | ...
 
+_cliente_
+_user-agent: cliente que se conecta al servidor, con sus datos_
 
 ### Cabeceras de la respuesta
 
@@ -213,13 +218,15 @@ Content-Encoding| Content-Encoding: gzip        | Codificiación de los datos en
 Content-Language| Content-Language: es          | Idioma en el que está el contenido.
 Content-Type    | Content-Type: text/html; charset=utf-8 | Tipo MIME del contenido.
 
+_servidor_
+_mime: empezó con el correo_
 
 ### Cabeceras de la respuesta
 
  Cabecera       |     Ejemplo                   |  Descripción 
 ----------------|-------------------------------|--------------
 Server          | Server: Apache/2.4.1 (Unix)   | Servidor web.
-Status          | Status: 200 OK                | Código de estado.
+Status          | 200 OK                        | Código de estado.
 ...             | ...                           | ...
 
 
@@ -236,6 +243,8 @@ application/json      | Datos en formato JSON
 image/jpeg            | Imagen en formato JPEG
 image/png             | Imagen en formato PNG
 
+_multiproposito_
+_json es para enviar datos, pero aquí está clasificado como aplicación_
 
 ### Tipos MIME 
 **Multipurpose Internet Mail Extension**
