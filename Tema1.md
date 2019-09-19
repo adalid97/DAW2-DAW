@@ -315,6 +315,7 @@ _Jso. Asp de microsoft. Ahora se usan poco, solo para mantenimiento de las que s
 - **LAMP**. Linux + Apache + MySQL + PHP. **Libre**.
 - **WISA**. Windows + IIS + SQLServer + ASP. **Propietaria**.
 
+_Plataformas web: wisa menos conocida->microsoft_
 
 ### Servidores web
 
@@ -323,13 +324,15 @@ _Jso. Asp de microsoft. Ahora se usan poco, solo para mantenimiento de las que s
 - **IIS** (Internet Information Server de Microsoft)
 - **Tomcat** (servidor orientado a desarrollo Java)
 
+_Apache el más conocido, cuota de mercado muy grande, un 40%.nginx está subiendo mucho. iis no se usa mucho. Tomcat contenedor de sevlet, se usa para jsp. contenedor de sevlet diferente servidor de aplicaciones_
 
 ### Apache
 #### Directorios y archivos de configuración
 
 ![Apache2](assets/apache2-files.png)
 
-
+_Dentro de la carpeta, hay una llamada apache2.conf archivo principar de configuración. envaars: port.conf: son los puertos,incluye a otros, datos: usuario, variable de entorno w3data... módulos:mods- redrigth habilitado enlace simbólico????? sites: se accede por un sitio virual_
+_ngin más modular_
 
 ## Despliegue en Internet
 
