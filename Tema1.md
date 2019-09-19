@@ -95,7 +95,7 @@ _vnc: protocolo abierto (opensource). rdp (Microsoft), linux lo soporta  como es
   ftp://archivos.example.com/descargas/ubuntu.iso
   https://pepe:1234@musica.com:1443/rock/descargar.php?album=37&formato=mp3
   ```
-_formato que tiene cada recurso en internet: protocolo(http)://servidor:puerto(opcional, solo obligatorio cuando sea disinto del habitual)/ruta/recurso(muchos tipos (buscar))
+_formato que tiene cada recurso en internet: protocolo(http)://servidor:puerto(opcional, solo obligatorio cuando sea distinto del habitual)/ruta/recurso(muchos tipos: imágenes... (buscar)), el resto son parámetros que le pasamos: habitual en php. https(seguro, el correo va cifrado), cada vez se usa más. http puerto normalmente 80, https 443_
 
 
 ## El protocolo HTTP
@@ -111,6 +111,11 @@ _formato que tiene cada recurso en internet: protocolo(http)://servidor:puerto(o
 - Existe la versión segura, que es HTTPS, en la que el servidor atiende en el **puerto 443**.  
 - Es es protocolo sin estado: no guarda ninguna información sobre conexiones anteriores.
 
+_w3c y ietf_
+_http/2 aumenta rendimiento, empezó a desarrollarlo google_
+_para que funcione la conexion segura tiene que tener el servidor un certificado digital_
+_por ser protocolo sin estado, inventaron las cookies_
+
 
 ### Transacción HTTP
 
@@ -123,6 +128,8 @@ _formato que tiene cada recurso en internet: protocolo(http)://servidor:puerto(o
 GET /index.html HTTP/1.1
 Host: www.example.com
 ```
+
+_texto plano_
 
 
 ### Ejemplo de respuesta
@@ -145,7 +152,7 @@ Connection: close
 </body>
 </html>
 ``` 
-
+_cabecera y cuerpo(código html, con su head y body...) _
 
 ### Métodos HTTP
 #### Métodos básicos
