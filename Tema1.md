@@ -354,6 +354,8 @@ _ngin más modular_
   - Servidor virtual (**VPS** - Virtual Private Server)
   - Nube (**Cloud**)
 
+_vps ya se está quedando desfasado_
+_ahora se usa más la nube_
 
 ### La nube
 #### Tipos de servicios ###
@@ -364,6 +366,10 @@ _ngin más modular_
 
 [Diferencias entre IaaS, PaaS y SaaS](https://www.genbeta.com/desarrollo/entendiendo-la-nube-el-significado-de-saas-paas-y-iaas)
 
+_iaas: te dan una máquina virtual, con ubuntu o windows, te conectas por ssh o lo que quieras y montas la plataforma que quieras (apache, ngint…)
+letencript certificados digitales gratis. Amazon ofrece iaas, un año gratis._
+_Paas, te dan la plataforma_
+_Saas: te dan el servicio directamente drive… se puede entender así wordpress_
 
 ### La nube
 #### Proveedores ###
