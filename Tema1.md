@@ -47,7 +47,6 @@ _Protocolo HTTP es muy importante, se usa para: _
 
 ![Internet](assets/internet.png)
 
-_Una red en forma de malla de area extensa, donde cada nodo es un enrutador del tráfico(equipos intermedios), lo equipos finales (clientes)_
 
 
 
@@ -58,8 +57,8 @@ _Una red en forma de malla de area extensa, donde cada nodo es un enrutador del 
 - Cada protocolo permite ofrecer un **servicio** o parte de él.
 - Diseño inicial **cliente/servidor**. 
 
-_Tb veremos protocolo ftp(transferencia de archivos), ssh(permite conexion remota), http(transferencia de páginas webs)_
-_Servicios P2P (torrent), distinto del normal: cliente/servidor_
+_Una red en forma de malla de area extensa, donde cada nodo es un enrutador del tráfico(equipos intermedios), lo equipos finales (clientes)_
+
 
 
 ### Protocolos de Internet
@@ -73,6 +72,9 @@ _Servicios P2P (torrent), distinto del normal: cliente/servidor_
 - **VNC**, **RDP** (Conexión remota gráfica)
 - ... muchos más
 
+
+_protocolo ftp(transferencia de archivos), ssh(permite conexion remota), http(transferencia de páginas webs)_
+_Servicios P2P (torrent), distinto del normal: cliente/servidor_
 _*Puede caer tipo test. Buscar las siglas*_
 _Hipertext Protocolo. CERN para???????????????_
 _Antes de cargar la página el navegador solicita un dns_
