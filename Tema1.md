@@ -28,7 +28,7 @@ element: class="fragment" data-fragment-index="1"
 - ### Despliegue en Internet
 
 <!--- Note: Nota a pie de página. -->
-_Protocolo HTTP es muy importante, se usa para: _
+
 
 
 
