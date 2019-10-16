@@ -73,6 +73,7 @@ _Una red en forma de malla de area extensa, donde cada nodo es un enrutador del 
 - ... muchos más
 
 
+_Conjunto de protocolos para comunicar los nodos, cada protocolo permite ofrecer un servicio o parte de él_
 _protocolo ftp(transferencia de archivos), ssh(permite conexion remota), http(transferencia de páginas webs)_
 _Servicios P2P (torrent), distinto del normal: cliente/servidor_
 _*Puede caer tipo test. Buscar las siglas*_
