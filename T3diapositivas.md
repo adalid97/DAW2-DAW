@@ -71,6 +71,7 @@ element: class="fragment" data-fragment-index="1"
 
 ![Tomcat](assets/tomcat.png)
 
+_Tomcat es: Contenedor de servlets (mini aplicaciones)_
 
 ### Instalación
 
