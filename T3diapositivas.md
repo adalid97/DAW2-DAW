@@ -147,6 +147,8 @@ Insertamos las siguientes líneas en **/etc/tomcat8/tomcat-users.xml**.
 /var/lib/tomcat8/webapps/<APP>/WEB-INF/classes/applicationContext.xml
 ```
 
+_Carpeta muy importante: WEB-INF.Dentro una carpeta por cada aplicación; lib:bibliotecas, clases: cl desplegadas, y archivo de configuración_
+
 
 ### Carpetas de una Webapp
 
@@ -155,6 +157,8 @@ Insertamos las siguientes líneas en **/etc/tomcat8/tomcat-users.xml**.
     - Subcarpeta **`classes`** : contiene los ficheros compilados (servlets, beans).
     - Subcarpeta **`lib`** : librerías adicionales.
   - Resto de carpetas para ficheros estáticos.
+  
+  
 
 
 
@@ -173,6 +177,7 @@ Insertamos las siguientes líneas en **/etc/tomcat8/tomcat-users.xml**.
 - Anteriormente conocido como **JBoss AS**.
 - Escrito en Java. Desarrollado por **RedHat**.
 
+_Maás potente que tomcat pero más difícil_
 
 
 ## Contenedores Docker
