@@ -235,7 +235,7 @@ docker ps
 docker rmi ...
 docker rm ...
 ```
-
+_images: para ver las imagenes, ps: para ver los contenedores, rmi: borrar imagen, rm: borrar contenedores_
 
 ### docker run
 
@@ -245,6 +245,8 @@ docker rm ...
 ```bash
 docker  run  -d  -p 8090:80  -v /var/www/html:/usr/share/nginx/html  nginx
 ```
+
+_pone en funcionamiento un contenerdor_
 
 **Opciones**
 
@@ -261,6 +263,8 @@ docker  run  -d  -p 8090:80  -v /var/www/html:/usr/share/nginx/html  nginx
 ```bash
 docker  exec  -it  9a60b60be82d  bash
 ```
+
+_Ejecuta algún comando del interior del contenedor: conectarse al contenedor_
 
 **Opciones**
 
