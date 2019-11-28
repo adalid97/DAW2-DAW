@@ -76,8 +76,7 @@ _Una red en forma de malla de area extensa, donde cada nodo es un enrutador del 
 _Conjunto de protocolos para comunicar los nodos, cada protocolo permite ofrecer un servicio o parte de él_
 _protocolo ftp(transferencia de archivos), ssh(permite conexion remota), http(transferencia de páginas webs)_
 _Servicios P2P (torrent), distinto del normal: cliente/servidor_
-_*Puede caer tipo test. Buscar las siglas*_
-_Hipertext Protocolo. CERN para???????????????_
+_Hipertext Protocolo. CERN_
 _Antes de cargar la página el navegador solicita un dns_
 _smtp para enviar, pop e imap para recibir_
 _rip:va actualizando la tabla de rutas. Rutas estáticas en los equipos, distinto de los enrutadores.ospf: más moderno, camino más corto: mira la ruta más accesible, más rápida. Telefonica tiene el enrutamiento de todos sus nodos en una u otra de ellas. Para conectar entre ellas se usan estos mismos protocolos. PAra unirlas hace falta un enrutador frontera que utiliza el bgp para conectar con otras redes 
