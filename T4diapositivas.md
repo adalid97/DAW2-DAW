@@ -66,6 +66,8 @@ element: class="fragment" data-fragment-index="1"
 - Servidores
   - **vsftpd**
   - proftpd
+  
+_Estos son los servidores más utilizados, nosotros trabajaremos con vsftpd_
 
 
 ### Tipos de usuarios
@@ -82,6 +84,7 @@ element: class="fragment" data-fragment-index="1"
   - conectan con `usuario`/`clave`.
 
 
+
 ### Modos de transferencia
 
 - **Texto**: para transferir archivos que sólo tienen caracteres imprimibles: txt, html, ...
@@ -94,9 +97,13 @@ element: class="fragment" data-fragment-index="1"
 
 ![FTP activo](assets/ftp-activo.png)
 
+_Es el modo más antiguo, el cliente trabaja con puertos mayores del 1024 y hace la peticíon a un puerto 21 (de control), el servidor envía los datos a través del puerto 20: no es seguro, porque alguien se puede interponer_
+
 **Pasivo**
 
 ![FTP pasivo](assets/ftp-pasivo.png)
+
+_El cliente se conecta al puerto mayor de 1024  y el servidor informa del puerto por el que se debe acceder_
 
 
 ### Seguridad
@@ -108,6 +115,8 @@ element: class="fragment" data-fragment-index="1"
   - **Usar SSL/TLS**: es necesario un certificado digital.
     - **FTPS**. Usa los puertos 990 (control) y 989 (datos).
     - **FTPES**. Más moderno. Recomendado.
+    
+_No es que conecte por SSH, sino que fpt lo usa por debajo_
 
 
 
