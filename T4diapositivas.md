@@ -117,6 +117,7 @@ _El cliente se conecta al puerto mayor de 1024  y el servidor informa del puerto
     - **FTPES**. Más moderno. Recomendado.
     
 _No es que conecte por SSH, sino que fpt lo usa por debajo_
+_FTPES: e es de explícito_
 
 
 
@@ -155,6 +156,7 @@ anon_root=/srv/ftp/
 # Puede acceder sólo a archivos legibles por todo el mundo
 anon_world_readable_only=YES
 ```
+_Directivas del archivo: `/etc/vsftpd.conf`_
 
 
 ### Usuarios locales
@@ -172,6 +174,7 @@ write_enable=YES
 # Permisos de los archivos: 666-022=644
 local_umask=022
 ```
+_la máscara por defecto suele ser la 022_
 
 
 ### Enjaular usuarios locales
@@ -185,6 +188,7 @@ chroot_local_user=YES
 chroot_list_enable=YES
 chroot_list_file=/etc/vsftpd.chroot_list
 ```
+_por defecto se enjaula a todo el mundo, y las excepciones irán en /etc/vsftpd.chroot_list_
 
 
 ### Usuarios virtuales
@@ -197,6 +201,8 @@ chroot_list_file=/etc/vsftpd.chroot_list
 adduser  --shell /bin/false  --home /var/www/usuario   usuario
 echo "/bin/false" >> /etc/shells
 ```
+_cada usuario debería tener un directorio en la carpeta /var/www/usuario(shell está false)_
+_De esta forma: adduser  --shell /bin/false  --home /var/www/usuario   usuario se añaden todos los usuarios que quieras_
 
 
 ### FTP seguro
