@@ -145,7 +145,7 @@ _.tk e .io de islas pequeñas del pacífico, que vendieron_
 [Root Servers](http://www.root-servers.org/)
 
 _*13*_
-_Son los últimos servidores que consultas, última instancia, ya que tienen toda la información_
+_Son los últimos servidores que consultas, última instancia, ya que tienen toda la información. Casi todos soportan ya ipv6_
 
 
 ## DNS: Tipos de servidores
