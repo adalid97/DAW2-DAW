@@ -69,6 +69,8 @@ _Casi todos los servidores en internet tienen un nombre, aunque no es obligatori
 
 - [Archivo hosts](https://es.wikipedia.org/wiki/Archivo_hosts)
 
+_nombres e ips se guardan en una bd distribuida, cada servidor tiene _
+
 
 ### FQDN
 
@@ -78,6 +80,8 @@ _Casi todos los servidores en internet tienen un nombre, aunque no es obligatori
   - **www** es el hostname.
   - **google.es** es el dominio.
 
+_www: nombre del equipo_
+_FQDN:www.google.es hostname+dominio _
 
 ### FQDN
 
@@ -88,6 +92,9 @@ _Casi todos los servidores en internet tienen un nombre, aunque no es obligatori
 
 ![Niveles DNS](assets/dns-niveles.png)
 
+_el punto no se pone_ 
+_**TLD: top level domain: dominio primer nivel 1ND**_
+
 
 ### Dominios de nivel superior
 
@@ -96,6 +103,7 @@ _Casi todos los servidores en internet tienen un nombre, aunque no es obligatori
 - Dominios originales. P. ej: **.com**, **.org**, **.net**, ...
 - Nuevos dominios. P. ej: **.bar**, **.blog**, **.download**, ...
 
+_Distintos tipos de nivel superior: genéricos: gTLD:los que venían en un principio, más otros que se fueron añadiendo_
 
 ### Dominios de nivel superior
 
@@ -103,6 +111,8 @@ _Casi todos los servidores en internet tienen un nombre, aunque no es obligatori
 
 - Dominios patrocinados por determinados colectivos. 
 - P. ej: **.cat**,  **.museum**, **.aero**, ...
+
+_ Fundación o alguien detrás que los patrocina_
 
 
 ### Dominios de nivel superior
@@ -112,11 +122,15 @@ _Casi todos los servidores en internet tienen un nombre, aunque no es obligatori
 - Dominios asociados a un país.
 - P. ej: **.es**, **.fr**, **.cn**, **.io**, ...
 
+_Código de país_
+_.tk e .io de islas pequeñas del pacífico, que vendieron_
+
 
 ### Lista de TLD
 
 - [Lista de TLD en Wikipedia](https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains)
 - [Lista actualizada de todos los TLD](https://www.iana.org/domains/root/db)
+
 
 
 ### Servidores raíz
@@ -130,6 +144,8 @@ _Casi todos los servidores en internet tienen un nombre, aunque no es obligatori
 
 [Root Servers](http://www.root-servers.org/)
 
+_*13*_
+_Son los últimos servidores que consultas, última instancia, ya que tienen toda la información_
 
 
 ## DNS: Tipos de servidores
