@@ -29,6 +29,8 @@ element: class="fragment" data-fragment-index="1"
 
 <!--- Note: Nota a pie de página. -->
 
+_DNS:Bind9 se usa para internet, para local se utiliza otro_
+
 
 
 ## Introducción
@@ -52,6 +54,10 @@ element: class="fragment" data-fragment-index="1"
 - Traduce nombres de equipos a direcciones IP y viceversa.
   - Nombre <----> Dirección IP. 
   - P. ej: www.google.es <----> 172.217.17.3
+
+_Vincula una IP con un nombre o un nombre con una IP_
+_Casi todos los servidores en internet tienen un nombre, aunque no es obligatorio, pero se utiliza para los navegadores, ya que es más fácil trabajar con nombres_
+
 
 
 ### DNS 
