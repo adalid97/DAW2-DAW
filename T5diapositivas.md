@@ -228,6 +228,7 @@ _El host tiene prioridad: Primero se consulta el host y luego el DNS_
 - **host**
 - **dig**
 
+_nslookup:Windows y Linux. host: Linux (?). dig: Linux_
 
 ### DIG
 #### Ejemplos de uso
@@ -241,6 +242,8 @@ dig  @8.8.8.8  www.google.es
 # Consulta cualquier registro
 dig  @8.8.8.8  -t ANY   google.es
 ```
+
+
 
 **Resolución inversa**
 
@@ -269,6 +272,7 @@ systemctl  status  bind9  # service bind9 status
 systemctl  enable  bind9  
 systemctl  disable bind9  
 ```
+_bind9: es el que se utiliza en internet_
 
 
 ### Configuración
