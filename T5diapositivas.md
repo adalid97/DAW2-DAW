@@ -213,6 +213,8 @@ _Son los últimos servidores que consultas, última instancia, ya que tienen tod
 
 ![Resolución DNS](assets/dns-resolucion.png)
 
+_El host tiene prioridad: Primero se consulta el host y luego el DNS_
+
 
 ### Tipos de resoluciones
 
