@@ -177,28 +177,28 @@ local_umask=022
 _la máscara por defecto suele ser la 022_
 
 
-### Enjaular usuarios locales
+### Enjaular usuarios locales !
 
 **También se aplica a los usuarios virtuales**
 
 ```bash
 # Enjaulamos a todos los usuarios 
 # excepto los indicados en /etc/vsftpd.chroot_list
-chroot_local_user=YES
+chroot_local_user=YES !
 chroot_list_enable=YES
 chroot_list_file=/etc/vsftpd.chroot_list
 ```
-_por defecto se enjaula a todo el mundo, y las excepciones irán en /etc/vsftpd.chroot_list_
+_por defecto se enjaula a todo el mundo, que el ususario no salga de un sistema de archivos y las excepciones irán en /etc/vsftpd.chroot_list_
 
 
 ### Usuarios virtuales
 
 - Son muy útiles si tenemos varios sitios virtuales en nuestro servidor web.
 - Cada sitio virtual pertenece a un usuario.
-- Una forma sencilla de crear un usuario virtual es la siguiente.
+- Una forma sencilla de crear un usuario virtual es la siguiente. !tipo test para que reconozcamos el comando
 
 ```bash
-adduser  --shell /bin/false  --home /var/www/usuario   usuario
+adduser  --shell /bin/false  --home /var/www/usuario   usuario   !!esta línea es el comando para añadir usuario
 echo "/bin/false" >> /etc/shells
 ```
 _cada usuario debería tener un directorio en la carpeta /var/www/usuario(shell está false)_
@@ -219,15 +219,17 @@ make-ssl-cert  \
    /usr/share/ssl-cert/ssleay.cnf \
    /etc/ssl/private/vsftpd.pem
 ```
+! Tipo test pero no. Los que vienen por defecto en ubuntu: /etc/ssl/private/ssl-cert-snakeoil.key  ( clave privada )
+   /etc/ssl/certs/ssl-cert-snakeoil.pem    ( certificado )
 
 
-### FTP seguro
+### FTP seguro !!
 
 ```bash
 # Activar el soporte SSL
-ssl_enable=YES
+ssl_enable=YES  !!
 
-# Se habilitan los soportes para las diversas versiones de SSL
+# Se habilitan los soportes para las diversas versiones de SSL ! 2 y 3 son las más modernas
 ssl_tlsv1=YES
 ssl_sslv2=YES
 ssl_sslv3=YES
@@ -236,7 +238,7 @@ ssl_sslv3=YES
 # El cifrado (DES-CBC3-SHA) por defecto no es soportado por filezilla.
 ssl_ciphers=DEFAULT
 
-# Se especifica la ubicación del certificado generado y la clave priva
+# Se especifica la ubicación del certificado generado y la clave priva !!rsa_cert_file y rsa_private_key_file
 rsa_cert_file=/etc/ssl/private/vsftpd.pem
 rsa_private_key_file=/etc/ssl/private/vsftpd.pem
 ```
@@ -246,7 +248,8 @@ rsa_private_key_file=/etc/ssl/private/vsftpd.pem
 
 ```bash
 # FTP explícito (FTPES)
-implicit_ssl=NO
+implicit_ssl=NO  !!
 listen_port=21
 require_ssl_reuse=NO
 ```
+!! Desactivar el implícito
