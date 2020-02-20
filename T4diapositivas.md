@@ -64,7 +64,7 @@ element: class="fragment" data-fragment-index="1"
   - **filezilla** !
   - navegador web (`ftp://servidor`) navegar en un ftp público
 - Servidores
-  - **vsftpd** ! cuidado con la d very secure (bastante seguro)
+  - **vsftpd** ! cuidado con la d very secure
   - proftpd
   
 _Estos son los servidores más utilizados, nosotros trabajaremos con vsftpd_
