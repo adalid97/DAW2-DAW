@@ -47,11 +47,11 @@ element: class="fragment" data-fragment-index="1"
 
 ### FTP
 
-**File Transfer Protocol**
+**File Transfer Protocol** !
 
 - Arquitectura **cliente/servidor**.
 - El cliente solicita la transferencia y el servidor responde.
-- El servidor usa por defecto 2 puertos:
+- El servidor usa por defecto 2 puertos: !
   - **Puerto 21**: puerto de control.
   - **Puerto 20**: puerto de datos.
 
@@ -59,12 +59,12 @@ element: class="fragment" data-fragment-index="1"
 ### Clientes y servidores
 
 - Clientes:
-  - **ftp**  (terminal)
-  - gftp
-  - **filezilla**
-  - navegador web (`ftp://servidor`)
+  - **ftp**  (terminal) !
+  - gftp !
+  - **filezilla** !
+  - navegador web (`ftp://servidor`) navegar en un ftp público
 - Servidores
-  - **vsftpd**
+  - **vsftpd** ! cuidado con la d very secure (bastante seguro)
   - proftpd
   
 _Estos son los servidores más utilizados, nosotros trabajaremos con vsftpd_
@@ -74,13 +74,13 @@ _Estos son los servidores más utilizados, nosotros trabajaremos con vsftpd_
 
 - **Usuario anónimo**: 
   - no disponen de cuenta en el servidor.
-  - conectan con `anonymous`/`correo@dominio`.
-  - Permisos de sólo lectura.
+  - conectan con `anonymous`/`correo@dominio`. ! anonymous y correo
+  - Permisos de sólo lectura. !
 - **Usuarios del sistema**: 
-  - disponen de cuenta en el servidor. **Pueden iniciar sesión** de terminal.
+  - disponen de cuenta en el servidor. **Pueden iniciar sesión** de terminal. mediante ssh
   - conectan con `usuario`/`clave`.
 - **Usuarios virtuales**
-  - disponen de cuenta en el servidor. **NO pueden iniciar sesión** de terminal.
+  - disponen de cuenta en el servidor. **NO pueden iniciar sesión** de terminal. 
   - conectan con `usuario`/`clave`.
 
 
@@ -88,7 +88,7 @@ _Estos son los servidores más utilizados, nosotros trabajaremos con vsftpd_
 ### Modos de transferencia
 
 - **Texto**: para transferir archivos que sólo tienen caracteres imprimibles: txt, html, ...
-- **Binario**: para transferir cualquier tipo de archivo: pdf, jpg, ... Es el modo **recomendado**.
+- **Binario**: para transferir cualquier tipo de archivo: pdf, jpg, ... Es el modo **recomendado**. !
 
 
 ### Modos de funcionamiento
@@ -97,26 +97,26 @@ _Estos son los servidores más utilizados, nosotros trabajaremos con vsftpd_
 
 ![FTP activo](assets/ftp-activo.png)
 
-_Es el modo más antiguo, el cliente trabaja con puertos mayores del 1024 y hace la peticíon a un puerto 21 (de control), el servidor envía los datos a través del puerto 20: no es seguro, porque alguien se puede interponer_
+_Es el modo más antiguo, el cliente trabaja con puertos mayores del 1024 y hace la peticíon a un puerto 21 (de control), el servidor envía los datos a través del puerto 20: no es seguro, porque alguien se puede interponer. Lo normal: el cliente abre un puerto por encima de 1024_
 
 **Pasivo**
 
 ![FTP pasivo](assets/ftp-pasivo.png)
 
-_El cliente se conecta al puerto mayor de 1024  y el servidor informa del puerto por el que se debe acceder_
+_El cliente se conecta al puerto mayor de 1024  y el servidor informa del puerto por el que se debe acceder. No puerto 20 (uno por encima de 1024)y el cliente es siempre quien inicia la conexión_ !
 
 
-### Seguridad
+### Seguridad !
 
 - FTP es un protocolo no seguro.
 - Existen 2 formas de hacerlo seguro:
   - **Usar SSH**: es necesario una conexión ssh subyacente.
-    - **SFTP** (SSH File Transfer Protocolo)
+    - **SFTP** (SSH File Transfer Protocolo) ! Por debajo usa ssh
   - **Usar SSL/TLS**: es necesario un certificado digital.
-    - **FTPS**. Usa los puertos 990 (control) y 989 (datos).
-    - **FTPES**. Más moderno. Recomendado.
+    - **FTPS**. Usa los puertos 990 (control) y 989 (datos). !
+    - **FTPES**. Más moderno. Recomendado. ! 
     
-_No es que conecte por SSH, sino que fpt lo usa por debajo_
+_SFTP No es que conecte por SSH, sino que fpt lo usa por debajo_
 _FTPES: e es de explícito_
 
 
@@ -126,7 +126,7 @@ _FTPES: e es de explícito_
 **`apt  install  vsftpd`**
 
 
-### Gestión del servicio 
+### Gestión del servicio ! con el comando service no se puede habilitar y deshabilitar
 
 ```bash
 systemctl  start   vsftpd  # service vsftpd start
@@ -139,15 +139,15 @@ systemctl  disable vsftpd
 ```
 
 
-## vsFTPd: Configuración
+## vsFTPd: Configuración !
 
 **`/etc/vsftpd.conf`**
 
 
-### Usuario anónimo
+### Usuario anónimo !!
 
 ```bash
-# Permitir acceso anónimo
+# Permitir acceso anónimo !!
 anonymous_enable=YES
 
 # Directorio por defecto
@@ -159,15 +159,15 @@ anon_world_readable_only=YES
 _Directivas del archivo: `/etc/vsftpd.conf`_
 
 
-### Usuarios locales
+### Usuarios locales 
 
 **También se aplica a los usuarios virtuales**
 
 ```bash
-# Permitir el acceso a los usuarios locales y virtuales
+# Permitir el acceso a los usuarios locales y virtuales !
 local_enable=YES
 
-# Permisos de escritura
+# Permisos de escritura !
 write_enable=YES
 
 # Permisos de las carpetas: 777-022=755
